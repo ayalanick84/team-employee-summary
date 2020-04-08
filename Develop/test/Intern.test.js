@@ -1,6 +1,6 @@
 const Intern = require("../lib/Intern");
 
-test.skip("Can set school via constructor", () => {
+test("Can set school via constructor", () => {
   const testValue = "UCLA";
   const e = new Intern("Foo", 1, "test@test.com", testValue);
   expect(e.school).toBe(testValue);
